@@ -11,10 +11,10 @@ require (
 	github.com/stretchr/testify v1.7.0
 	go.uber.org/zap v1.19.0
 	gotest.tools v2.2.0+incompatible
-	k8s.io/api v0.19.16
-	k8s.io/apimachinery v0.19.16
+	k8s.io/api v0.20.0
+	k8s.io/apimachinery v0.20.0
 	k8s.io/cli-runtime v0.19.16
-	k8s.io/client-go v0.19.16
+	k8s.io/client-go v0.20.0
 	sigs.k8s.io/controller-runtime v0.6.5
 )
 
