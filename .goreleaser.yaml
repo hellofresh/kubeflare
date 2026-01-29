@@ -23,4 +23,9 @@ builds:
 dockers:
   - dockerfile: ./deploy/Dockerfile.manager
     image_templates:
-      - "hellofresh/kubeflare-manager:{{.Version}}"
+      - "ghcr.io/hellofresh/kubeflare-manager:{{.Version}}"
+    build_flag_templates:
+      - "--label=org.opencontainers.image.source=https://github.com/{{ .Env.GITHUB_REPOSITORY }}"
+      - "--label=org.opencontainers.image.version={{ .Version }}"
+      - "--label=org.opencontainers.image.revision={{ .Commit }}"
+      - "--label=org.opencontainers.image.created={{ .Date }}"
